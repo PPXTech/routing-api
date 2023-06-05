@@ -63,6 +63,8 @@ export const SUPPORTED_CHAINS: ChainId[] = [
 ]
 const DEFAULT_TOKEN_LIST = 'https://raw.githubusercontent.com/PPXTech/core-token-list/main/tokenlist.json'
 
+UNSUPPORTED_TOKEN_LIST.tokens = []
+
 export interface RequestInjected<Router> extends BaseRInj {
   chainId: ChainId
   metric: IMetric
